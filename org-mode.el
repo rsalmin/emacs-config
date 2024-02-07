@@ -47,7 +47,10 @@
 
 ;; capture templates
 (setq org-capture-templates
-      `(("t" "Todo" entry (file+headline ,(concat org-directory "notes.org") "Tasks")
+      `(("t" "Todo" entry (file+headline ,(concat org-directory "incoming.org") "Tasks")
          "* TODO %?\n  %i\n  %a")
         ("j" "Journal" entry (file+datetree ,(concat org-directory "journal.org"))
-         "* %?\nEntered on %U\n  %i\n  %a")))
+         "* %?\nEntered on %U\n  %i\n  %a")
+        ("n" "Notes" entry (file ,(concat org-directory "notes.org"))
+         "* %?\nEntered on %U\n  %i\n  %a")
+	))
