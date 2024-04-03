@@ -7,10 +7,10 @@
 (add-hook 'c-mode-common-hook 'custom-c-mode-hook)
 
 
-;;(require 'rust-mode)
-;(use-package rust-mode
-;  :init
-;  (setq rust-mode-treesitter-derive t))
+(require 'rust-mode)
+(use-package rust-mode
+  :init
+  (setq rust-mode-treesitter-derive t))
 
 ;; "Icky hack" (https://www.masteringemacs.org/article/how-to-get-started-tree-sitter) to start with
 (setq major-mode-remap-alist
@@ -19,6 +19,6 @@
 	(js2-mode . js-ts-mode)
 	(json-mode . json-ts-mode)
 	(python-mode . python-ts-mode)
-	(rust-mode . rust-ts-mode)
+;;	(rust-mode . rust-ts-mode)
 	(typescript-mode . typescript-ts-mode)
 	(yaml-mode . yaml-ts-mode)))
