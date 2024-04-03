@@ -10,6 +10,12 @@
 ; don't show startup screen
 (setq inhibit-startup-screen t)
 
+; don't move curosor when scrolling
+(setq scroll-preserve-screen-position t) 
+
+; reload file if it changed on disk (only when buffer is not changed)
+(global-auto-revert-mode t)
+
 ; mouse paste at text cursor not mouse cursor
 (setq mouse-yank-at-point t)
 
