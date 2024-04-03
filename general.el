@@ -19,6 +19,11 @@
 ; mouse paste at text cursor not mouse cursor
 (setq mouse-yank-at-point t)
 
+;; disable text scalling with Ctrl+mouse-wheel
+;; to prevent acsedents on trackpad, use Ctrl+(+/-) instead
+(global-set-key [(control wheel-up)] 'ignore)
+(global-set-key [(control wheel-down)] 'ignore)
+
 ; backup files in separate directory
 (setq backup-directory-alist `((".*" . "~/.emacs-backup")))
 ; autosave files in separate directory
