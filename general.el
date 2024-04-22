@@ -44,5 +44,8 @@
                     :weight 'normal
                     :width  'normal)
 
+;; delete trailing whitespaces when saving
+(add-hook 'write-file-hooks 'delete-trailing-whitespace)
+
 ;; sudo-edit
 (global-set-key (kbd "C-c C-r") 'sudo-edit)
