@@ -7,6 +7,9 @@
 (add-hook 'c-mode-common-hook 'custom-c-mode-hook)
 
 
+;;
+;;      Rust
+;;
 (require 'rust-mode)
 (use-package rust-mode
   :init
@@ -22,3 +25,9 @@
 ;;	(rust-mode . rust-ts-mode)
 	(typescript-mode . typescript-ts-mode)
 	(yaml-mode . yaml-ts-mode)))
+
+
+;;
+;;      Common Lisp
+;;
+(setq inferior-lisp-program "sbcl")
