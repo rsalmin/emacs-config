@@ -25,6 +25,7 @@
 	("home" ,(concat my-icon-dir "great-wall-svgrepo-com.svg") nil nil :ascent center :height (1.0 . em) )
 	("kids" ,(concat my-icon-dir "personal-information-direct-relationship-svgrepo-com.svg") nil nil :ascent center :height (1.0 . em) )
 	("work" ,(concat my-icon-dir "office-chair-svgrepo-com.svg") nil nil :ascent center :height (1.0 . em) )
+	("regular" ,(concat my-icon-dir "reload-svgrepo-com.svg") nil nil :ascent center :height (1.0 . em) )
 	))
 
 ;; set automatically push in org mode for git-auto-commit
@@ -42,7 +43,7 @@
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
 
-;; Set idle time to 10 minutes					
+;; Set idle time to 10 minutes
 (setq org-clock-idle-time 10)
 
 ;; capture templates
