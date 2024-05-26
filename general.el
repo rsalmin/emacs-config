@@ -11,7 +11,7 @@
 (setq inhibit-startup-screen t)
 
 ;; don't move curosor when scrolling
-(setq scroll-preserve-screen-position t) 
+(setq scroll-preserve-screen-position t)
 
 ;; reload file if it changed on disk (only when buffer is not changed)
 (global-auto-revert-mode t)
@@ -30,7 +30,7 @@
 ;; backup files in separate directory
 (setq backup-directory-alist `((".*" . "~/.emacs-backup")))
 ;; autosave files in separate directory
-(setq auto-save-file-name-transforms `((".*" "~/.emacs-saves" t)))
+(setq auto-save-file-name-transforms `((".*" "~/.emacs-saves/" t)))
 
 ;; use nice acme like theme
 (use-package acme-theme
