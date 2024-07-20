@@ -12,7 +12,7 @@
   (add-to-list 'org-modules 'org-habit t))
 
 ;; set org-directory for next use
-(setq org-directory "~/laboratory/organizational/")
+(setq org-directory "~/org/")
 
 ;; define variable for icon directory
 (defvar-local my-icon-dir (concat org-directory "icons/")
