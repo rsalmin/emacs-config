@@ -1,10 +1,17 @@
-;; use spaces instead of tabs for c-modes
-(defun custom-c-mode-hook ()
-    ; always use spaces instead of tabs (use C-q TAB to insert tabs)
-    (setq-default indent-tabs-mode nil)
-    (setq c-default-style "bsd" c-basic-offset 4)
-  )
-(add-hook 'c-mode-common-hook 'custom-c-mode-hook)
+(c-add-style "my-style"
+             '("linux"
+               ;; always use spaces instead of tabs (use C-q TAB to insert tabs)
+               (indent-tabs-mode . nil)
+               ;; indent by 4 spaces
+               (c-basic-offset . 4)
+               ;; no indents after namespaces
+               (c-offsets-alist . ((innamespace . [0])))))
+
+
+;; uset my-style for all c-modes
+(defun my-c-mode-hook ()
+  (c-set-style "my-style"))
+(add-hook 'c-mode-common-hook 'my-c-mode-hook)
 
 
 ;;
